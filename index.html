@@ -8,10 +8,24 @@
     <style>
         /* Add your custom CSS here */
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([58, 9], 15); // Replace with your actual coordinates and zoom level.
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        var marker = L.marker([YOUR_LATITUDE, YOUR_LONGITUDE]).addTo(map); // Replace with your actual coordinates.
+        marker.bindPopup("<b>Your Wedding Location</b>").openPopup();
+    </script>
+
+
 </head>
 <body>
     <header>
-        <h1>John & Jane's Wedding</h1>
+        <h1>Torjus og Bolettes bryllup</h1>
     </header>
     
     <nav>
@@ -42,11 +56,11 @@
         <!-- Add details and schedule of events here -->
     </section>
 
-    <section id="gallery">
-        <h2>Photo Gallery</h2>
-        <p>Relive the beautiful moments from our journey.</p>
-        <!-- Add a photo gallery here with placeholders -->
-    </section>
+    <section id="location">
+    <h2>Location</h2>
+    <div id="map" style="height: 400px;"></div>
+</section>
+
 
     <section id="contact">
         <h2>Contact Us</h2>
