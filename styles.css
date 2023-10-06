@@ -1,49 +1,50 @@
-/* styles.css */
-
 body {
-    font-family: "Arial", sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
+  margin: 0;
 }
-
-header {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
+.sample-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url(https://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
+.sample-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: MidnightBlue;
+  opacity: 0.3;
+}
+.sample-header-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
 h1 {
-    font-family: "Cursive", cursive;
-    color: #e80000;
+  font-weight: 500;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #e80000;
+h2 {
+  font-weight: 400;
 }
-
-nav li {
-    display: inline;
-    margin: 0 20px;
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
 }
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
+.sample-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }
