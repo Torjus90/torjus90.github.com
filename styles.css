@@ -1,17 +1,18 @@
 body {
   margin: 0;
+  background-color: #FDFBF9;
 }
-.sample-header {
+.header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background-image: url(https://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg);
+  background-image: url(header3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sample-header::before {
+.header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -19,32 +20,52 @@ body {
   bottom: 0;
   left: 0;
   background-color: MidnightBlue;
-  opacity: 0.3;
+  opacity: 0.0;
 }
-.sample-header-section {
+.header-section {
   position: relative;
-  padding: 15% 0 10%;
-  max-width: 640px;
-  margin-left: auto;
+  padding: 5% 0 5%;
+  /* max-width: 640px; */
+  margin-left: 5%;
   margin-right: auto;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Belista';
+  font-size:3.5vw
 }
 h1 {
-  font-weight: 500;
+  font-weight: 10;
 }
 h2 {
-  font-weight: 400;
+  font-weight: 10;
 }
-.sample-section-wrap {
+.section-wrap {
   position: relative;
   background-color: white;
 }
-.sample-section {
+.section {
   position: relative;
-  max-width: 640px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   padding: 40px;
+  font-family: 'Sen', sans-serif;
+  text-align: center;
+  
+}
+
+.fadeinimage
+{
+  opacity: 0;
+}
+
+.fadeintext
+{
+  opacity: 0;
+}
+
+@font-face {
+  font-family: "Belista";
+  src: url("Belista.ttf");
 }
