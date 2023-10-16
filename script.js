@@ -8,6 +8,8 @@ function parallax_height() {
 
 
 $(document).ready(function() {
+    parallax_height();
+    checkElementLocation();
     var delay = 1000;
     $('.fadeinimage').each( function(i){
         
@@ -24,8 +26,27 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     parallax_height();
+    checkElementLocation();
 });
 $(window).resize(function() {
     parallax_height();
 });
 
+
+function checkElementLocation() {
+    var $window = $(window);
+    var bottom_of_window = $window.scrollTop() + $window.height();
+  
+    $('.section').each(function(i) {
+      var $that = $(this);
+      var bottom_of_object = $that.offset().top;// + $that.outerHeight();
+      //if element is in viewport, add the animate class
+      if (bottom_of_window > bottom_of_object) {
+        $(this).animate({'opacity':'1'},1500);
+      }
+    });
+  }
+
+  // if in viewport, show the animation
+  checkElementLocation();
+  

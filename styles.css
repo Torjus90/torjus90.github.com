@@ -52,7 +52,7 @@ h2 {
   padding: 40px;
   font-family: 'Sen', sans-serif;
   text-align: center;
-  
+  opacity: 0;
 }
 
 .fadeinimage
