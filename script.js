@@ -42,7 +42,7 @@ function checkElementLocation() {
       var bottom_of_object = $that.offset().top;// + $that.outerHeight();
       //if element is in viewport, add the animate class
       if (bottom_of_window > bottom_of_object) {
-        $(this).animate({'opacity':'1'},1500);
+        $(this).animate({'opacity':'1'},2000);
       }
     });
   }
