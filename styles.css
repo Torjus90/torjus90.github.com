@@ -6,6 +6,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  height: 40%;
   width: 100%;
   background-image: url(header3.jpg);
   background-position: center;
@@ -15,17 +16,13 @@ body {
 .header::before {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: MidnightBlue;
   opacity: 0.0;
 }
 .header-section {
   position: relative;
-  padding: 5% 0 5%;
-  /* max-width: 640px; */
+  max-height: 720px;
+  padding:10% 0 10% 0 ;
   margin-left: 5%;
   margin-right: auto;
   color: white;
@@ -35,6 +32,7 @@ body {
 }
 h1 {
   font-weight: 10;
+  margin: 0
 }
 h2 {
   font-weight: 10;
@@ -48,7 +46,7 @@ h2 {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 40px;
   font-family: 'Sen', sans-serif;
   text-align: center;
@@ -65,6 +63,16 @@ h2 {
   opacity: 0;
 }
 
+.divider
+{
+  position: relative;
+  width: 20%;
+  max-width: 480px;
+  background-image: url(divider4.svg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 @font-face {
   font-family: "Belista";
   src: url("Belista.ttf");
