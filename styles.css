@@ -37,6 +37,10 @@ h1 {
 h2 {
   font-weight: 10;
 }
+
+p {
+  font-size: 1.2em;
+}
 .section-wrap {
   position: relative;
   background-color: white;
